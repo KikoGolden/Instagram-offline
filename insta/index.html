@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/Instagram-Icon.png"/>
+    <title>Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+       <img id="title" src="images/insta_logo.png">
+       <div id="insta-btns">
+            <img src="images/add.png">
+            <img src="images/heart.png">
+            <img src="images/send.png">
+       </div>
+    </header>
+
+    <div id="story-container">
+      <div id="profile">
+         <img src="images/prf.jpg">
+         <h3>Kiko Golden</h3>
+      </div>
+
+    <div class="scroll">
+      <div class="part">
+        <div class="orange-border">
+          <img src="images/prf1.jpg">
+        </div>
+        <div class="info">
+          <h3>tomholland</h3>
+          <img class="verify" src="images/verify.png">
+        </div>
+      </div>
+      <div class="part">
+        <div class="orange-border">
+          <img src="images/prf3.jpg">
+        </div>
+        <div class="info">
+          <h3>AndrewGarfield</h3>
+          <img class="verify" src="images/verify.png">
+        </div>
+      </div>
+      <div class="part">
+        <div class="orange-border">
+          <img src="images/prf2.jpg">
+        </div>
+        <div class="info">
+        <h3>t_maguire</h3>
+        <img class="verify" src="images/verify.png">
+      </div>
+      </div>
+      <div class="part">
+        <div class="orange-border">
+          <img src="images/prf4.jpg">
+        </div>
+        <div class="info">
+          <h3>therock</h3>
+          <img class="verify" src="images/verify.png">
+        </div>
+      </div>
+      <div class="part">
+        <div class="orange-border">
+          <img src="images/prf5.jpg">
+        </div>
+          <h3>hasbulla</h3>
+      </div>
+      <div class="part">
+        <div class="orange-border">
+          <img src="images/prf6.jpg">
+        </div>
+        <div class="info">
+          <h3>Vin_diesel</h3>
+          <img class="verify" src="images/verify.png">
+        </div>
+      </div> 
+    </div>
+  </div><!-- /.scroll -->
+  <hr size="0.1em" color="gray" />
+  <!-- posts -->
+  <!--profil posted-->
+  <div class="profile-post">
+    <img class="pfp" src="images/marvelpfp.jpg">
+  <div class="name">Marvel</div>
+  <img class="menu" src="images/menu.png">
+  </div>
+  
+  <!--image posted-->
+  <img class="post" src="images/nwhPoster.jpg">
+  
+  <!--togglemenu-->
+      
+  <div id="menuList">
+    <div class="menu-flex">
+      <div class="toggled-flex">
+      <img src="images/nwhPoster.jpg">
+      Записано
+    </div> 
+
+      <div class="toggle-save-collection">
+        <a onclick="toggleCollections()" href="#">Запис в колекция</a> 
+      </div>
+    </div>
+  </div>
+  
+  <!--interaction buttons-->
+  <div class="post-buttons">
+    <img onclick="like()"  id="like-btn" src="images/heart.png">
+    <img class="unlike" onclick="unlike()" id="liked-btn" src="images/heartClicked.png">
+    <img id="" src="images/comment.png">
+    <img id="" src="images/send.png">
+
+    <img onclick="save(), togglemenu()" id="Save-btn" class="save-btn" src="images/save.png">
+    <img class="unsave" onclick="unsave()" id="saved-btn"  class="save-btn" src="images/saveClicked.png">
+  </div>
+  <!--Likes Info-->
+  <div class="post-likes">
+    <img class="pfp-like" src="images/prf3.jpg">
+    <div class="like-info">Харесано от <strong>AndrewGarfield</strong> и <strong>55 <strong id="like-nums">648</strong> други</strong><div>
+    </div>
+
+<!--Current working place-->
+
+<!--Current working place-->
+
+<!--Darker theme-->
+<div  id="darker-background"></div>
+
+<!--Collections saved-->
+     <div id="save-collections">
+         <h3>Записване в</h3>
+         <hr size="0.1em" color="gray" />
+
+         <div class="collections-add">
+            <div onclick="toggleCollections(), addedToQuotes(), toggleAdded()">
+              <img src="images/quotes_collection.jpg">
+               <div>Quotes</div>
+            </div>
+            <div onclick="toggleCollections(), addedToCars(), toggleAdded()">
+              <img src="images/cars_collection.jpg">
+               <div>Cars</div>
+            </div>
+            <div onclick="toggleCollections(), addedToMemes(), toggleAdded()">
+              <img src="images/memes_collection.jpg">
+               <div>Memes</div>
+            </div>
+         </div>
+
+         <hr size="0.1em" color="gray" />
+         <h4 onclick="toggleCollections()">Отмяна</h4>
+     </div>
+
+     <!--Added To Collection-->
+    <div id="wrapper-added">
+     <div id="added-to-collection">
+       <div>
+         <img src="images/nwhPoster.jpg"> 
+       </div>
+       <div id="width">Записано в <strong id="collection-choosed">egerger</strong></div>
+       <div id="collection-last"><strong><a href="#">Преглед</a></strong></div>
+     </div>
+    </div>
+     
+  <script src="myscript.js"></script>
+</body>
+</html>
