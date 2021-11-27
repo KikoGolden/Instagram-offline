@@ -109,7 +109,7 @@
   <div class="post-buttons">
     <img onclick="like()"  id="like-btn" src="images/heart.png">
     <img class="unlike" onclick="unlike()" id="liked-btn" src="images/heartClicked.png">
-    <img id="" src="images/comment.png">
+    <img id="comment-btn" onclick="toggleComments()" src="images/comment.png">
     <img id="" src="images/send.png">
 
     <img onclick="save(), togglemenu()" id="Save-btn" class="save-btn" src="images/save.png">
@@ -161,6 +161,22 @@
        <div id="width">Записано в <strong id="collection-choosed">egerger</strong></div>
        <div id="collection-last"><strong><a href="#">Преглед</a></strong></div>
      </div>
+    </div>
+
+    <!--Comments menu-->
+    <div id="comment-menu">
+
+      <div id="nav-flex">
+       <div id="comments-nav">
+         <img onclick="toggleComments()" src="images/comment_exit.png">
+         <h2>Коментари</h2>
+       </div>
+
+       <div id="comments-nav">
+        <img src="images/send.png">
+      </div>
+     </div>
+
     </div>
      
   <script src="myscript.js"></script>

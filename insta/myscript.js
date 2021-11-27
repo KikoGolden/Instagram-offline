@@ -110,6 +110,19 @@ function toggleAdded(){
   wrapper.style.maxHeight = "140px";
   setTimeout(hidewrapper,2000);
 }
-  function hidewrapper(){
-    wrapper.style.maxHeight = '0px';
-  }
+function hidewrapper(){
+ wrapper.style.maxHeight = '0px';
+}
+
+  //------toggle comments
+let commentMenu = document.getElementById('comment-menu');
+commentMenu.style.width = '0px';
+
+function toggleComments(){
+    if(commentMenu.style.width == '0px'){
+     commentMenu.style.width = "100%";
+    }
+    else{
+    commentMenu.style.width = '0px';
+    }
+}
