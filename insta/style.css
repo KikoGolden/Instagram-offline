@@ -122,16 +122,13 @@ header #insta-btns img{
     width: 15px;
     background:none;
     height: 15px;
-    margin: 0;
-    margin-left: 2px;;
+    margin-left: 2px;
+    margin-bottom: 14px;
 }
 #story-container .info{
     display:flex;
     justify-content: center;
-    vertical-align: middle;
-}
-.info h3{
-    align-self: center;
+    align-items: center;
 }
 /*pfPosts*/
 .profile-post{
@@ -429,4 +426,74 @@ header #insta-btns img{
     gap: 40%;
     margin: 4px 10px;
     width: 120%;
+}
+/*Post a comment*/
+.user-info-wrapper{
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    margin-left: 0;
+    padding-left: 0;
+}
+.user-info-wrapper img{
+    width: 45px;
+    border-radius: 100%;
+}
+ ul{
+   list-style: none;
+   margin-left: -30px;
+}
+.comments {
+    display: flex;
+    gap: 2%;
+    align-items: center;
+    margin-bottom: 4%;
+}
+.comm-pfp{
+    width: 45px;
+    border-radius: 100%;
+}
+.comm-like{
+    width: 20px;
+    height: 20px;
+    margin-left: 2%;
+}
+.comm-like:hover{
+    cursor: pointer;
+}
+.comment-info{
+    display: flex;
+    gap:5%;
+    color: rgb(134, 134, 134);
+    font-weight: 600;
+}
+.comment-info .comment-reply{
+    cursor: pointer;
+}
+.comment{
+    margin-bottom: 2%;
+}
+.comment .verify{
+    width: 13px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.comment-wrapper{
+    width: 75%;
+}
+#comment-unlike{
+    animation: liked 0.3s linear ;
+    z-index: 1110;
+}
+#comment-unlike2{
+    animation: liked 0.3s linear ;
+    z-index: 1110;
+}
+#comment-unlike3{
+    animation: liked 0.3s linear ;
+    z-index: 1110;
+}
+#comment-unlike4{
+    animation: liked 0.3s linear ;
+    z-index: 1110;
 }

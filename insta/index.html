@@ -166,6 +166,7 @@
     <!--Comments menu-->
     <div id="comment-menu">
 
+      <!--Nav comments-->
       <div id="nav-flex">
        <div id="comments-nav">
          <img onclick="toggleComments()" src="images/comment_exit.png">
@@ -174,10 +175,96 @@
 
        <div id="comments-nav">
         <img src="images/send.png">
-      </div>
+       </div>
      </div>
 
-    </div>
+     <!--Post a comment-->
+     <ul>
+       <li class="comments">
+         <img class="comm-pfp" src="images/prf3.jpg">
+         <div class="comment-wrapper">
+           <div class="user-info-wrapper">
+            <div class="comment">
+             <strong>AndrewGarfield</strong><img class="verify" src="images/verify.png">
+             I`m definitely not in the movie!... maybe
+            </div>
+           </div>
+
+            <div class="comment-info">
+               <div>2 мин.</div>
+               <div><span id="commentLikes">4170</span> харесвания</div>
+               <div class="comment-reply">Отговор</div>
+            </div>
+         </div>
+         <img class="comm-like" id="comment-like" onclick="commLike()" src="images/heart.png">
+         <img class="comm-like unlike" id="comment-unlike" onclick="commUnlike()" src="images/heartClicked.png">
+        </li>
+
+        <li class="comments">
+          <img class="comm-pfp" src="images/prf1.jpg">
+          <div class="comment-wrapper">
+            <div class="user-info-wrapper">
+             <div class="comment">
+              <strong>tomholland</strong><img class="verify" src="images/verify.png">🕷️
+             </div>
+            </div>
+ 
+             <div class="comment-info">
+                <div>1 мин.</div>
+                <div><span id="commentLikes2">1202</span> харесвания</div>
+                <div class="comment-reply">Отговор</div>
+             </div>
+          </div>
+          <img class="comm-like" id="comment-like2" onclick="commLike2()" src="images/heart.png">
+         <img class="comm-like unlike" id="comment-unlike2" onclick="commUnlike2()" src="images/heartClicked.png">
+         </li>
+
+         <li class="comments">
+          <img class="comm-pfp" src="images/prf4.jpg">
+          <div class="comment-wrapper">
+            <div class="user-info-wrapper">
+             <div class="comment">
+              <strong>therock</strong><img class="verify" src="images/verify.png">
+              Its about drive
+             </div>
+            </div>
+ 
+             <div class="comment-info">
+                <div>1 мин.</div>
+                <div><span id="commentLikes3">1111</span> харесвания</div>
+                <div class="comment-reply">Отговор</div>
+             </div>
+          </div>
+          <img class="comm-like" id="comment-like3" onclick="commLike3()" src="images/heart.png">
+         <img class="comm-like unlike" id="comment-unlike3" onclick="commUnlike3()" src="images/heartClicked.png">
+         </li>
+
+         <li class="comments">
+          <img class="comm-pfp" src="images/prf7.jpg">
+          <div class="comment-wrapper">
+            <div class="user-info-wrapper">
+             <div class="comment">
+              <strong>miakhalifa</strong><img class="verify" src="images/verify.png">
+              Am I in the movie... oops its marvel.. sorry!
+             </div>
+            </div>
+ 
+             <div class="comment-info">
+                <div>56 сек.</div>
+                <div><span id="commentLikes4">469</span> харесвания</div>
+                <div class="comment-reply">Отговор</div>
+             </div>
+          </div>
+          <img class="comm-like" id="comment-like4" onclick="commLike4()" src="images/heart.png">
+          <img class="comm-like unlike" id="comment-unlike4" onclick="commUnlike4()" src="images/heartClicked.png">
+         </li>
+     </ul><!--posted comments closing-->
+
+     <!--Write a comment-->
+
+     <!--Write a comment-->
+         
+    </div><!--Comment menu closing-->
      
   <script src="myscript.js"></script>
 </body>
