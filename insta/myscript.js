@@ -212,3 +212,67 @@ function commUnlike4(){
     commentLikesNumber4--;
     allCommentLikes4.textContent = commentLikesNumber4;
 }
+
+//------coment publish input
+const inputField = document.querySelector('textarea');
+const publishBtn = document.querySelector('#comment-type button');
+const ul = document.getElementById('comms-all');
+
+inputField.onkeyup = ()=>{
+  let userData = inputField.value;
+  if(userData.trim() != 0){
+    publishBtn.classList.add('active');
+  }else{
+    publishBtn.classList.remove('active');
+  }
+}
+
+publishBtn.onclick = ()=>{
+  let userData = inputField.value;
+  let getLocalStorage = localStorage.getItem("New Comment");
+  if(getLocalStorage == null){
+    listArr = [];
+  }
+  else{
+    listArr = JSON.parse(getLocalStorage);
+  }
+  listArr.push(userData);
+  localStorage.setItem("New Comment", JSON.stringify(listArr));
+  showTasks();
+}
+
+function	showTasks(){
+  let getLocalStorage = localStorage.getItem("New Comment");
+  if(getLocalStorage == null){
+    listArr = [];
+  }
+  else{
+    listArr = JSON.parse(getLocalStorage);
+  }
+  let newLiTag = '';
+  listArr.forEach((element, index)=>{
+    newLiTag = `<li class="comments">
+    <img class="comm-pfp" src="images/prf.jpg">
+    <div class="comment-wrapper">
+      <div class="user-info-wrapper">
+       <div class="comment">
+        <strong>kikogoldena</strong>
+        ${element}
+       </div>
+      </div>
+
+       <div class="comment-info">
+          <div>1 сек.</div>
+          <div class="comment-reply">Отговор</div>
+       </div>
+    </div>
+    <img class="comm-like" onclick="exeption()" src="images/heart.png">
+   </li>`
+  });
+  ul.innerHTML += newLiTag;
+}
+
+//---cant like own post exeption
+function exeption(){
+  alert("Can't like your own comments!");
+}

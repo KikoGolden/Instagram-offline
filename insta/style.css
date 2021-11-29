@@ -105,6 +105,9 @@ header #insta-btns img{
     margin-top: 2px;
     font-size: 14px;
 }
+.part{
+    text-align: center;
+}
 #story-container #profile{
  margin-right: 5px;
  padding-right: 0;
@@ -124,6 +127,9 @@ header #insta-btns img{
     height: 15px;
     margin-left: 2px;
     margin-bottom: 14px;
+}
+#story-container h3{
+    align-self: center;
 }
 #story-container .info{
     display:flex;
@@ -496,4 +502,55 @@ header #insta-btns img{
 #comment-unlike4{
     animation: liked 0.3s linear ;
     z-index: 1110;
+}
+
+/*Comment publish*/
+
+#comment-type button{
+    color: rgb(48, 171, 253);
+    font-size: 16px;
+    margin-top: 6%;
+    border:none;
+    background: none;
+    pointer-events: none;
+    opacity: 0.7;
+}
+#comment-type button.active{
+    opacity: 1;
+    color: rgb(0, 119, 255);
+    pointer-events: auto;
+    cursor: pointer;
+}
+#comment-publish:hover{
+    cursor: pointer;
+    color: rgb(0, 132, 255);
+}
+#comment-type{
+    display: flex;
+    background-color: rgb(46, 46, 46);
+    width: 100%;
+    gap: 3%;
+    padding: 4% 2%;
+}
+#input{
+    width: 48%;
+    background: rgb(46, 46, 46);
+    font-size: 16px;
+    color:white;
+    border: none;
+    box-shadow: none;
+    outline: none;
+}
+#comment-type{
+    display: fixed;
+    position: fixed;
+    bottom: 0;
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+textarea{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    resize: none;
 }
