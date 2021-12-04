@@ -4,6 +4,7 @@ body{
     padding:0;
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+    color: white;
 }
 input[type="file"]{
     display: none;
@@ -30,10 +31,17 @@ label img{
 label:hover{
     cursor: pointer;
 }
+
+/*----------------------------------Home Page-------------------------------------*/
 /*nav bar*/
 header{
     height: 5%;
     display:flex;
+    top:0;
+    position: fixed;
+    background: black;
+    width: 100%;
+    padding: 7px;
 }
 header #title{
  width: 25%;
@@ -53,6 +61,29 @@ header #insta-btns img{
   header #insta-btns img:hover{
     cursor: pointer;
   }
+
+/*Bottom Navigation Links*/
+footer{
+    display: flex;
+    background: black;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 7px 0;
+    gap: 5%;
+    z-index: 951;
+}
+footer img{
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+}
+footer #profile{
+  border-radius: 100%;
+}
+
 /*scroll bar*/
 .scroll{
     display: flex;
@@ -76,6 +107,7 @@ header #insta-btns img{
     border-radius: 5px;
 }
 #story-container{
+    margin-top: 15%;
     display: flex;
     justify-content:space-around;
     color:white;
@@ -272,6 +304,7 @@ header #insta-btns img{
     width: 25px;
     border-radius: 100%;
     margin: 10px;
+    margin-bottom: 5px;
 }
 .like-info{
     margin-top: 14px;
@@ -386,7 +419,7 @@ header #insta-btns img{
     display: fixed;
     position: fixed;
     transition: 0.7s ease-in-out;
-    bottom: 0;
+    bottom: 39px;
     left: 0;
     z-index: 950;
 }
@@ -460,8 +493,8 @@ header #insta-btns img{
     border-radius: 100%;
 }
 .comm-like{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     margin-left: 2%;
 }
 .comm-like:hover{
@@ -470,6 +503,7 @@ header #insta-btns img{
 .comment-info{
     display: flex;
     gap:5%;
+    font-size: 12px;
     color: rgb(134, 134, 134);
     font-weight: 600;
 }
@@ -547,10 +581,73 @@ header #insta-btns img{
     bottom: 0;
 }
 ::-webkit-input-placeholder{
-    color: white;
+    color: rgb(134, 134, 134);
 }
 textarea{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     resize: none;
 }
+
+/*Post Description*/
+#post-description{
+    color: white;
+    padding:0 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.hashtag{
+    color: rgb(0, 140, 255);
+}
+#description-more{
+    color: rgb(134, 134, 134);
+    font-weight: bold;
+    cursor: pointer;
+}
+.marvel-description{
+    align-items: flex-start;
+}
+.description{
+    margin-bottom: 20px;
+}
+#time-from-posting{
+    font-size: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    margin-bottom: 50px;
+    color: rgb(134, 134, 134);
+}
+
+/*----------------------------------Search Page-------------------------------------*/
+/*header search*/
+#search-type{
+    display: flex;
+    background-color:rgb(46, 46, 46);
+    border-radius: 5%;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 85%;
+    padding: 7px 10px;
+    gap: 4%;
+}
+#search-type img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#search-type textarea{
+    background:none;
+    margin-top: 4%;
+}
+
+
+/*----------------------------------Reels Page-------------------------------------*/
+
+
+
+/*----------------------------------Shop Page-------------------------------------*/
+
+
+
+/*----------------------------------Profile Page-------------------------------------*/

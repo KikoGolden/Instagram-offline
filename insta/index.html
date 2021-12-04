@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/png" href="images/Instagram-Icon.png"/>
-    <title>Test</title>
+    <title>Home</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!--Header-->
     <header>
        <img id="title" src="images/insta_logo.png">
        <div id="insta-btns">
@@ -17,6 +18,15 @@
             <img src="images/send.png">
        </div>
     </header>
+
+    <!--Bottom Nav-->
+    <footer id="bottom-nav">
+     <a><img src="images/homePage.png"></a> 
+    <a href="search.html"><img src="images/search.png"></a>
+    <a href="search.html"><img src="images/reels.png"></a>
+    <a href="search.html"><img src="images/shop.webp"></a>
+    <a href="search.html"><img id="profile" src="images/prf.jpg"></a>
+    </footer>
 
     <div id="story-container">
       <div id="profile">
@@ -122,18 +132,24 @@
   <div class="post-likes">
     <img class="pfp-like" src="images/prf3.jpg">
     <div class="like-info">Харесано от <strong>AndrewGarfield</strong> и <strong>55 <strong id="like-nums">648</strong> други</strong><div>
+  </div>
+  </div>
+</div>
+   
+<!--Post Description-->
+    <div id="post-description">
+      <strong>Marvel</strong> DUDE! 🚨 Spider-Monday is HERE! 🚨 Tickets are on sale NOW for <span class="hashtag">#SpiderManNoWayHome</span>! Hurry,<span id="description-more" onclick="toggleDescription()">... още</span>
     </div>
-
-<!--Current working place-->
-
-<!--Current working place-->
+    <div id="time-from-posting">
+      2 мин.
+    </div>
 
 <!--Darker theme-->
 <div  id="darker-background"></div>
 
 <!--Collections saved-->
      <div id="save-collections">
-         <h3>Записване в</h3>
+         <h3 onclick="">Записване в</h3><!--Shoud close savedMenu onclick-->
          <hr size="0.1em" color="gray" />
 
          <div class="collections-add">
@@ -183,6 +199,23 @@
 
      <!--Post a comment-->
      <ul>
+      <li class="comments marvel-description">
+        <img class="comm-pfp" src="images/marvelpfp.jpg">
+        <div class="comment-wrapper">
+          <div class="user-info-wrapper">
+           <div class="comment">
+            <strong>Marvel</strong><img class="verify" src="images/verify.png">
+            DUDE! 🚨 Spider-Monday is HERE! 🚨 Tickets are on sale NOW for <span class="hashtag">#SpiderManNoWayHome</span>! Hurry, you definitely want to be the FIRST to see it exclusively in movie theaters December 17!
+           </div>
+          </div>
+
+           <div class="comment-info">
+              <div>2 мин.</div>
+           </div>
+       </li>
+
+       <hr class="description" size="0.1em" color="gray" margin-bottom="15px"/>
+
        <li class="comments">
          <img class="comm-pfp" src="images/prf3.jpg">
          <div class="comment-wrapper">

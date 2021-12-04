@@ -65,6 +65,10 @@ function togglemenu(){
        menuList.style.maxHeight = '0px';
    }
 }
+function toggleBackMenu(){
+  menuList.style.padding = '0';
+       menuList.style.maxHeight = '0px';
+}
 
 //------toggle save collections 
 let collections = document.getElementById("save-collections");
@@ -73,7 +77,6 @@ collections.style.maxHeight = '0px';
 let background = document.getElementById("darker-background");
 
 function toggleCollections(){
-
    if(collections.style.maxHeight == '0px'){
     collections.style.paddingTop = '10px';
     collections.style.paddingBottom = '10px';
@@ -275,4 +278,12 @@ function	showTasks(){
 //---cant like own post exeption
 function exeption(){
   alert("Can't like your own comments!");
+}
+
+//---------toggle description
+let descriptionToggleBtn = document.getElementById('description-more');
+let postDescription = document.getElementById('post-description');
+
+function toggleDescription(){
+  postDescription.innerHTML = '<strong>Marvel</strong> DUDE! 🚨 Spider-Monday is HERE! 🚨 Tickets are on sale NOW for <span class="hashtag">#SpiderManNoWayHome</span>! Hurry, you definitely want to be the FIRST to see it exclusively in movie theaters December 17!'; 
 }
