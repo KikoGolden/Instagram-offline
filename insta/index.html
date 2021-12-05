@@ -15,7 +15,7 @@
        <div id="insta-btns">
             <img src="images/add.png">
             <img src="images/heart.png">
-            <img src="images/send.png">
+            <img onclick="toggleMessages()" src="images/send.png">
        </div>
     </header>
 
@@ -31,7 +31,7 @@
     <div id="story-container">
       <div id="profile">
          <img src="images/prf.jpg">
-         <h3>Kiko Golden</h3>
+         <h3>Вашата ис...</h3>
       </div>
 
     <div class="scroll">
@@ -308,6 +308,37 @@
      <!--Write a comment-->
          
     </div><!--Comment menu closing-->
+     
+    <!--Messages-->
+    <div id="messages-menu">
+      <div id="messages-header">
+        <div id="exit-and-name">
+         <img onclick="toggleMessages()" src="images/comment_exit.png">
+         <h3>kikogoldena</h3>
+        </div>
+
+        <div id="videochat-and-group">
+          <img src="images/video.png">
+          <img src="images/newMessage.png">
+        </div>
+      </div>
+
+        <div id="messages-navigation">
+           <div id="messages-nav1" onclick="currElementMessage1()" class="current-messages-nav">Чатове</div>
+           <div id="messages-nav2" onclick="currElementMessage2()">Стаи</div>
+           <div id="messages-nav3" onclick="currElementMessage3()">Заявки</div>
+       </div>
+        
+       <img id="cobweb1" src="images/cobweb1-removebg-preview.png">
+      
+      <div id="no-friends-message">
+       <h3>You Have No Friends!</h3>
+       <img src="images/laughing_skull.png">
+      </div>
+
+       <img id="cobweb2" src="images/cobweb2-removebg-preview.png">
+
+    </div>
      
   <script src="myscript.js"></script>
 </body>

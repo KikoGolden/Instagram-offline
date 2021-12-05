@@ -1,6 +1,7 @@
 //--------------------main
 
 
+
 //--------------elements
 
 //---------heart like
@@ -50,7 +51,6 @@ function save(){
 menuList.style.maxHeight = '0px';
 
 function togglemenu(){
-
    if(menuList.style.maxHeight == '0px'){
        menuList.style.paddingTop = '10px';
        menuList.style.paddingBottom = '10px';
@@ -216,7 +216,7 @@ function commUnlike4(){
     allCommentLikes4.textContent = commentLikesNumber4;
 }
 
-//------coment publish input
+//------comment publish input
 const inputField = document.querySelector('textarea');
 const publishBtn = document.querySelector('#comment-type button');
 const ul = document.getElementById('comms-all');
@@ -286,4 +286,68 @@ let postDescription = document.getElementById('post-description');
 
 function toggleDescription(){
   postDescription.innerHTML = '<strong>Marvel</strong> DUDE! 🚨 Spider-Monday is HERE! 🚨 Tickets are on sale NOW for <span class="hashtag">#SpiderManNoWayHome</span>! Hurry, you definitely want to be the FIRST to see it exclusively in movie theaters December 17!'; 
+}
+
+//---------messages navigation element selected
+let messagesEl1 = document.getElementById('messages-nav1');
+let messagesEl2 = document.getElementById('messages-nav2');
+let messagesEl3 = document.getElementById('messages-nav3');
+
+//1
+function currElementMessage1(){
+  if(!messagesEl1.classList.contains('current-messages-nav'))
+  {
+    messagesEl1.classList.add('current-messages-nav');
+  }
+
+  if(messagesEl2.classList.contains('current-messages-nav')){
+        messagesEl2.classList.remove('current-messages-nav');
+  }
+  if(messagesEl3.classList.contains('current-messages-nav')){
+   messagesEl3.classList.remove('current-messages-nav');
+  }
+}
+
+//2
+function currElementMessage2(){
+  if(!messagesEl2.classList.contains('current-messages-nav'))
+  {
+        messagesEl2.classList.add('current-messages-nav');
+  }
+
+  if(messagesEl1.classList.contains('current-messages-nav')){
+        messagesEl1.classList.remove('current-messages-nav');
+  }
+  if(messagesEl3.classList.contains('current-messages-nav')){
+   messagesEl3.classList.remove('current-messages-nav');
+  }
+}
+
+//3
+function currElementMessage3(){
+  if(!messagesEl3.classList.contains('current-messages-nav'))
+  {
+        messagesEl3.classList.add('current-messages-nav');
+  }
+
+  if(messagesEl2.classList.contains('current-messages-nav')){
+        messagesEl2.classList.remove('current-messages-nav');
+  }
+  if(messagesEl1.classList.contains('current-messages-nav')){
+   messagesEl1.classList.remove('current-messages-nav');
+  }
+}
+
+//---toggle messages 
+let messagesMenu = document.getElementById('messages-menu')
+messagesMenu.style.width = '0px';
+
+function toggleMessages(){
+  if(messagesMenu.style.width == '0px'){
+    messagesMenu.style.width = '100%';
+    messagesMenu.style.height = '100%';
+   }
+   else{
+    messagesMenu.style.width = '0px';
+   }
 }

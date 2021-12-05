@@ -113,8 +113,8 @@ footer #profile{
     color:white;
 }
 #story-container img{
-    width:80px;
-    height: 80px;
+    width:70px;
+    height: 70px;
     padding: 3px;
     background: black;
     border-radius: 100%;
@@ -123,10 +123,11 @@ footer #profile{
     margin:2px;
 }
 .orange-border{
-    align-content: center;
+    align-content: flex-end;
     align-items: center;
-    width:90px;
-    height: 90px;
+    width:80px;
+    height: 80px;
+    align-self: center;
     margin: 5px;
     background: linear-gradient(180deg,red,rgb(255, 94, 0),rgb(255, 153, 0));
     border-radius: 100%;
@@ -138,15 +139,23 @@ footer #profile{
     font-size: 14px;
 }
 .part{
+    display: flex;
+    flex-direction: column;
     text-align: center;
+    justify-content: center;
 }
 #story-container #profile{
  margin-right: 5px;
  padding-right: 0;
- margin-top: 5px;
+ margin-top: 7px;
 }
 #story-container #profile img{
     background:none;
+    margin-left: 15px;
+    padding-bottom: 5px;
+}
+#story-container #profile h3{
+    margin-left: 8px;
 }
 #story-container #scroll img{
     padding: 5px;
@@ -164,6 +173,7 @@ footer #profile{
     align-self: center;
 }
 #story-container .info{
+    margin-left: 7%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -616,6 +626,99 @@ textarea{
     font-weight: bold;
     margin-bottom: 50px;
     color: rgb(134, 134, 134);
+}
+
+/*Messages*/
+#messages-menu{
+    z-index: 3500;
+    right: 0;
+    top:0;
+    position: fixed;
+    background: black;
+    color: white;
+   transition:0.3s ease-in-out;
+}
+
+/*Messages Header*/
+#messages-header{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: 8px 15px;
+}
+#messages-header img{
+    width:30px;
+    cursor: pointer;
+}
+#exit-and-name{
+    display: flex;
+    gap: 22%;
+    align-items: center;
+}
+#exit-and-name h3{
+   font-size: 22px;
+}
+#videochat-and-group{
+    display: flex;
+    gap: 25%;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/*Messages Nav*/
+#messages-navigation{
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    color: rgb(134, 134, 134);
+    border-bottom: 1px solid rgb(134, 134, 134);
+    text-align: center;
+}
+#messages-navigation div{
+    cursor: pointer;
+    width: 33%;
+   padding-bottom: 17px;
+} 
+.current-messages-nav{
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+/*Messages Webs*/
+#cobweb1{
+ width: 50%;
+ right: -5%;
+ top: -3%;
+ display: fixed;
+ position: absolute;
+ z-index: 3600;
+}
+#cobweb2{
+ width: 90%;
+ bottom: 0;
+ right: 0;
+ display: fixed;
+ position: absolute;
+ z-index: 3600;
+}
+
+#no-friends-message{
+    margin-top: 60%;
+    margin-bottom: 50%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    gap: 1%;
+    color: rgb(179, 178, 178);
+}
+#no-friends-message img{
+    width: 70px;
+}
+#no-friends-message h3{
+  min-width: 210px;
+  margin-left: 50%;
 }
 
 /*----------------------------------Search Page-------------------------------------*/
