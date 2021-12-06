@@ -1,2 +1,2 @@
 # Instagram-offline
-Instagram Copy - v0.06, only mobile version for now.
+Instagram Copy - v0.07, only mobile & tablet version for now.
