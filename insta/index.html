@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!--Header Wrapper-->
+<div id="header-wrapper">
   <!--Header-->
     <header>
        <img id="title" src="images/insta_logo.png">
@@ -18,15 +20,23 @@
             <img onclick="toggleMessages()" src="images/send.png">
        </div>
     </header>
+  </div>
+<!--Header Wrapper END-->
+
+<!--Profiles Wrapper-->
+<div id="profiles-wrapper">
+  <div id="edit-profiles">
 
     <!--Bottom Nav-->
-    <footer id="bottom-nav">
+    <footer>
+    <div id="bottom-nav">
      <a><img src="images/homePage.png"></a> 
     <a href="search.html"><img src="images/search.png"></a>
     <a href="search.html"><img src="images/reels.png"></a>
     <a href="search.html"><img src="images/shop.webp"></a>
     <a href="search.html"><img id="profile" src="images/prf.jpg"></a>
-    </footer>
+    </div>
+  </footer>
 
     <div id="story-container">
       <div id="profile">
@@ -91,20 +101,37 @@
       </div> 
     </div>
   </div><!-- /.scroll -->
+
+  </div>
+  </div>
+  <!--Profiles Wrapper END-->
+
   <hr size="0.1em" color="gray" />
   <!-- posts -->
+
+<!--prf-post-wrapper -->
+<div id="prf-post-wrapper">
+
   <!--profil posted-->
   <div class="profile-post">
     <img class="pfp" src="images/marvelpfp.jpg">
   <div class="name">Marvel</div>
   <img class="menu" src="images/menu.png">
   </div>
+
+</div><!--prf-post-wrapper END-->
   
   <!--image posted-->
   <img class="post" src="images/nwhPoster.jpg">
   
+  <!--Wrapper post main-->
+  <div id="main-body-wrapper">
+    <div>
+
+<!--Toggle Menu Wrapper-->
+<div id="toggle-menu-wrapper">
+
   <!--togglemenu-->
-      
   <div id="menuList">
     <div class="menu-flex">
       <div class="toggled-flex">
@@ -118,6 +145,9 @@
     </div>
   </div>
   
+</div>
+<!--Toggle Menu Wrapper END-->
+
   <!--interaction buttons-->
   <div class="post-buttons">
     <img onclick="like()"  id="like-btn" src="images/heart.png">
@@ -139,11 +169,17 @@
 <!--Post Description-->
     <div id="post-description">
       <strong>Marvel</strong> DUDE! 🚨 Spider-Monday is HERE! 🚨 Tickets are on sale NOW for <span class="hashtag">#SpiderManNoWayHome</span>! Hurry,<span id="description-more" onclick="toggleDescription()">... още</span>
-    </div>
-    <div id="time-from-posting">
-      2 мин.
-    </div>
+      </div>
+    
+      <!--Time From Posting Wrapper-->
+      <div id="posting-time-wrapper">
 
+      <div id="time-from-posting">
+        2 мин.
+      </div>
+
+    </div><!--Time From Posting Wrapper END-->
+   
 <!--Darker theme-->
 <div  id="darker-background"></div>
 
@@ -170,7 +206,7 @@
          <hr size="0.1em" color="gray" />
          <h4 onclick="toggleCollections()">Отмяна</h4>
      </div>
-
+     
      <!--Added To Collection-->
     <div id="wrapper-added">
      <div id="added-to-collection">
@@ -181,7 +217,9 @@
        <div id="collection-last"><strong><a href="#">Преглед</a></strong></div>
      </div>
     </div>
-
+     
+  </div>
+    </div><!--Wrapper post main END-->
     <!--Comments menu-->
     <div id="comment-menu">
 

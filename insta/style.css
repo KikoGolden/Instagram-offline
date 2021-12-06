@@ -63,7 +63,7 @@ header #insta-btns img{
   }
 
 /*Bottom Navigation Links*/
-footer{
+#bottom-nav{
     display: flex;
     background: black;
     width: 100%;
@@ -407,6 +407,7 @@ footer #profile{
 
 /*Add To Collection*/
 #added-to-collection{
+    background: rgba(46, 46, 46, 0.795);
     display: flex;
     justify-content: flex-start;
     gap:2%;
@@ -424,7 +425,7 @@ footer #profile{
     margin-left: 30%;
 }
 #wrapper-added{
-    background: rgba(46, 46, 46, 0.795);
+   
     width:100%;
     display: fixed;
     position: fixed;
@@ -500,6 +501,7 @@ footer #profile{
 }
 .comm-pfp{
     width: 45px;
+    height: 45px;
     border-radius: 100%;
 }
 .comm-like{
@@ -754,3 +756,197 @@ textarea{
 
 
 /*----------------------------------Profile Page-------------------------------------*/
+
+
+
+
+/*-----------Different Screens--------------*/
+
+@media only screen and (min-width:700px){
+    /*Posted Image*/
+  .post{
+      width: 600px;
+      align-self: center;
+  }
+
+  /*All*/
+  body{
+     text-align: center;
+  }
+
+  /*Menu Messages*/
+  #messages-menu{
+      max-width: 60%;
+  }
+
+  /*Header*/
+header{
+    align-items: center;
+    justify-content: center;
+    height: 7%;
+    width: 600px;
+}
+header #title{
+    width: 200px;
+    height:70px;
+   }
+header #insta-btns{
+  padding-left: 42%;
+}
+header #insta-btns img{
+    width: 35px;
+    height: 35px;
+    margin: 5% 5%;
+  }
+
+  /*Scroll*/
+  .scroll{
+    width: 500px;
+}
+#story-container{
+    margin-top: 10%;
+}
+
+/*Post Description*/
+#post-description{
+    width: 600px;
+    text-align: left;
+}
+
+/*Bottom navigation*/
+#bottom-nav{
+    width: 610px;
+    height: 42px
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+/*body main post*/
+#main-body-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+/*header top*/
+#header-wrapper{
+    display: flex;
+    justify-content: center;
+}
+
+/*Collections Added*/
+#wrapper-added{
+    display: flex;
+    justify-content: center;
+}
+#added-to-collection{
+    width: 600px;
+}
+#added-to-collection img{
+    padding: 15px;
+
+    width: 33px;
+    height: 33px;
+}
+
+/*Comment information*/
+#posting-time-wrapper{
+    display: flex;
+    justify-content: center;
+}
+#time-from-posting{
+    text-align: left;
+    width: 600px;
+    margin-bottom: 70px;
+    font-size: 13px;
+}
+
+/*Profiles Width*/
+#profiles-wrapper{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+#edit-profiles{
+    width: 600px;
+}
+
+/*Profile posted width*/
+#prf-post-wrapper{
+    display: flex;
+    justify-content: center;
+}
+#profile-post{
+    width: 600px;
+}
+.menu{
+    margin-left: 480px;
+}
+
+/*Save button*/
+.save-btn{
+  margin-left: 440px
+}
+#saved-btn{
+    margin: 0;
+    margin-left: 440px
+}
+
+/*Toggle menu*/
+#toggle-menu-wrapper{
+    display: flex;
+    justify-content: center;
+}
+#menuList{
+    width: 600px;
+}
+.toggle-save-collection{
+    margin-left: 170px;
+}
+
+/*Comment Menu*/
+#comment-menu{
+    max-width: 60%;
+}
+#input{
+    width: 300px;
+}
+#comment-type{
+    height: 40px;
+    align-items: center;
+}
+}
+@media only screen and (min-width:800px){
+     /*Menu Messages*/
+    #messages-menu{
+        max-width: 50%;
+    }
+
+  /*Scroll*/
+#story-container{
+    margin-top: 9%;
+}
+}
+@media only screen and (min-width:1300px){
+     /*Menu Messages*/
+    #messages-menu{
+        max-width: 35%;
+    }
+
+  /*Scroll*/
+#story-container{
+    margin-top: 7%;
+}
+}
+@media only screen and (min-width:1800px){
+     /*Menu Messages*/
+    #messages-menu{
+        max-width: 30%;
+    }
+
+        /*Scroll*/
+#story-container{
+    margin-top: 5%;
+}
+}
