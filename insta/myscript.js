@@ -58,7 +58,7 @@ function togglemenu(){
        setTimeout(function(){
            menuList.style.maxHeight = "0px"
            menuList.style.padding = "0px";
-        },5000);
+        },3000);
    }
    else{
     menuList.style.padding = '0';

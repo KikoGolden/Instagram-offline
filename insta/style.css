@@ -330,7 +330,7 @@ footer #profile{
     overflow:hidden;
     display: absolute;
     position: absolute;
-    transition:0.1s  ease-out;
+    transition:0.3s  ease-out;
     width: 100%;
     margin-top: -65px;
 }
@@ -422,7 +422,7 @@ footer #profile{
     height: 40px;
 }
 #collection-last{
-    margin-left: 30%;
+    margin-left: 26%;
 }
 #wrapper-added{
    
@@ -723,6 +723,8 @@ textarea{
   margin-left: 50%;
 }
 
+/*New Post Structure*/
+
 /*----------------------------------Search Page-------------------------------------*/
 /*header search*/
 #search-type{
@@ -783,15 +785,18 @@ textarea{
 header{
     align-items: center;
     justify-content: center;
-    height: 7%;
-    width: 600px;
+    height: 80px;
+    width:100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    background: black;
 }
 header #title{
-    width: 200px;
-    height:70px;
+    width: 190px;
+    height:60px;
    }
 header #insta-btns{
-  padding-left: 42%;
+  padding-left: 45%;
 }
 header #insta-btns img{
     width: 35px;
@@ -845,7 +850,6 @@ footer{
 }
 #added-to-collection img{
     padding: 15px;
-
     width: 33px;
     height: 33px;
 }
@@ -929,6 +933,14 @@ footer{
 }
 }
 @media only screen and (min-width:1300px){
+/*Header*/
+header{
+    width: 1200px;
+}
+header #insta-btns{
+  padding-left: 72%;
+}
+
      /*Menu Messages*/
     #messages-menu{
         max-width: 35%;
@@ -937,6 +949,71 @@ footer{
   /*Scroll*/
 #story-container{
     margin-top: 7%;
+}
+
+/*Post flexed*/
+#unflexed-img{
+    display: none;
+}
+#flex-display-post{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/*New post structure*/
+#new-post-structure{
+    display: block;
+    gap: 20px;
+}
+#prf-post-wrapper{
+    display: flex;
+    justify-content: center;
+}
+#profile-post{
+    width: 1200px;
+}
+.menu{
+    margin-left: 1080px;
+}
+/*footer*/
+#bottom-nav{
+    width: 1350px;
+    height: 42px
+}
+footer{
+    display: flex;
+    justify-content: center;
+}
+/*Added to collections*/
+#added-to-collection{
+    width: 1300px;
+}
+#collection-last{
+    margin-left: 900px
+}
+/*Save Menu*/
+#menuList{
+    z-index: 1000;
+    margin-left: -1220px;
+    margin-top: 3px;
+}
+/*Profiles Width*/
+#profiles-wrapper{
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+}
+#edit-profiles{
+    width: 1200px;
+}
+#story-container{
+    justify-content: space-between;
+}
+}
+@media only screen and (max-width:1300px){
+#flexed-img-wrapper{
+ display:none;
 }
 }
 @media only screen and (min-width:1800px){
