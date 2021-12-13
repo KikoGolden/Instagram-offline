@@ -217,8 +217,8 @@ function commUnlike4(){
 }
 
 //------comment publish input
-const inputField = document.querySelector('textarea');
-const publishBtn = document.querySelector('#comment-type button');
+const inputField = document.getElementById('input');
+const publishBtn = document.getElementById('comment-publish');
 const ul = document.getElementById('comms-all');
 
 inputField.onkeyup = ()=>{
@@ -274,6 +274,8 @@ function	showTasks(){
   });
   ul.innerHTML += newLiTag;
 }
+
+//Comment publish on wide screen
 
 //---cant like own post exeption
 function exeption(){

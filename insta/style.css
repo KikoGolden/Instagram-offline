@@ -985,6 +985,7 @@ footer{
     display: flex;
     justify-content: center;
 }
+
 /*Added to collections*/
 #added-to-collection{
     width: 1300px;
@@ -992,12 +993,14 @@ footer{
 #collection-last{
     margin-left: 900px
 }
+
 /*Save Menu*/
 #menuList{
     z-index: 1000;
     margin-left: -1220px;
     margin-top: 3px;
 }
+
 /*Profiles Width*/
 #profiles-wrapper{
     margin-top: 45px;
@@ -1010,10 +1013,34 @@ footer{
 #story-container{
     justify-content: space-between;
 }
+
+/*Comments*/
+#comment-menu2{
+    width: 600px;
+    height: 600px;
+    margin-top: -40px;
+    overflow: auto;
+}
+#comments-nav img{
+ width: 25px;
+ margin-left: -190px;
+}
+#comment-menu{
+    display: none;
+}
+#comment-menu2::-webkit-scrollbar{
+    width:0;
+}
+#comment-menu2 #comment-type{
+    position: relative;
+}
 }
 @media only screen and (max-width:1300px){
 #flexed-img-wrapper{
  display:none;
+}
+#comment-menu2{
+    display:none;
 }
 }
 @media only screen and (min-width:1800px){
