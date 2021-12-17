@@ -1,6 +1,10 @@
 //--------------------main
 
-
+//--------loading screen
+$(window).on('load', function() {
+  $('#loader').fadeOut(1000);
+  $('#page').fadeIn(1000);
+})
 
 //--------------elements
 
@@ -274,8 +278,6 @@ function	showTasks(){
   });
   ul.innerHTML += newLiTag;
 }
-
-//Comment publish on wide screen
 
 //---cant like own post exeption
 function exeption(){

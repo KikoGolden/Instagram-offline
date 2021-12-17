@@ -7,8 +7,17 @@
     <link rel="shortcut icon" type="image/png" href="images/Instagram-Icon.png"/>
     <title>Home</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
+  <!--Loading-->
+  <div id="loader">
+    <div></div>
+  </div>
+
+  <!---Page-->
+  <div id="page">
+
 <!--Header Wrapper-->
 <div id="header-wrapper">
   <!--Header-->
@@ -43,7 +52,7 @@
          <img src="images/prf.jpg">
          <h3>Вашата ис...</h3>
       </div>
-
+ <div id="scroll-wrapper">
     <div class="scroll">
       <div class="part">
         <div class="orange-border">
@@ -101,6 +110,19 @@
       </div> 
     </div>
   </div><!-- /.scroll -->
+
+  <!--
+  <div class="paddles">
+		<button class="left-paddle paddle hidden">
+			🡰
+		</button>
+		<button class="right-paddle paddle">
+			🡲
+		</button>
+	</div>
+  -->
+
+</div>
 
   </div>
   </div>
@@ -517,6 +539,8 @@
        <img id="cobweb2" src="images/cobweb2-removebg-preview.png">
 
     </div>
+
+  </div><!--Page END-->
      
   <script src="myscript.js"></script>
 </body>
