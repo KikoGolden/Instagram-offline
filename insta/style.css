@@ -63,7 +63,6 @@ label:hover{
         transform: rotate(360deg);
     }
 }
-
 /*nav bar*/
 header{
     height: 5%;
@@ -123,6 +122,9 @@ footer #profile{
     overflow-x: auto;
     color: white;
     height: 140px
+}
+.scroll{
+    width: 270px;
 }
 .scroll .part{
     text-align: center;
@@ -554,7 +556,6 @@ footer #profile{
     cursor: pointer;
 }
 .comment{
-    text-align: left;
     margin-bottom: 2%;
 }
 .comment .verify{
@@ -837,9 +838,7 @@ header #insta-btns img{
   }
 
   /*Scroll*/
-  .scroll{
-    width: 500px;
-}
+  
 #story-container{
     margin-top: 10%;
 }
@@ -963,6 +962,9 @@ footer{
 #story-container{
     margin-top: 9%;
 }
+.scroll{
+    width: 350px;
+}
 }
 @media only screen and (min-width:1300px){
 /*Header*/
@@ -1044,6 +1046,9 @@ footer{
 }
 #story-container{
     justify-content: space-between;
+}
+.scroll{
+    width: 600px;
 }
 
 /*Comments*/

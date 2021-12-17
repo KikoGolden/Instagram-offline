@@ -355,3 +355,10 @@ function toggleMessages(){
     messagesMenu.style.width = '0px';
    }
 }
+
+//story slider
+function Slider(){
+  const carouselSlides = document.querySelectorAll(".part");
+  const btnPrev = document.querySelector('.prev');
+  const btnNext = document.querySelector('.next');
+}
