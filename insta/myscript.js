@@ -246,6 +246,7 @@ publishBtn.onclick = ()=>{
   listArr.push(userData);
   localStorage.setItem("New Comment", JSON.stringify(listArr));
   showTasks();
+  inputField.value = null;
 }
 
 function	showTasks(){

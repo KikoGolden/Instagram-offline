@@ -482,6 +482,7 @@ footer #profile{
     position: fixed;
     z-index: 1100;
     transition:0.5s ease-in-out;
+    text-align: left;
     
 }
 #comments-nav{
@@ -1057,6 +1058,7 @@ footer{
     height: 600px;
     margin-top: -40px;
     overflow: auto;
+    text-align: left;
 }
 #comments-nav img{
  width: 25px;
