@@ -243,10 +243,10 @@ publishBtn.onclick = ()=>{
   else{
     listArr = JSON.parse(getLocalStorage);
   }
+  inputField.value = '';
   listArr.push(userData);
   localStorage.setItem("New Comment", JSON.stringify(listArr));
   showTasks();
-  inputField.value = null;
 }
 
 function	showTasks(){
@@ -268,7 +268,6 @@ function	showTasks(){
         ${element}
        </div>
       </div>
-
        <div class="comment-info">
           <div>1 сек.</div>
           <div class="comment-reply">Отговор</div>

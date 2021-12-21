@@ -124,7 +124,7 @@ footer #profile{
     height: 140px
 }
 .scroll{
-    width: 270px;
+    width: 320px;
 }
 .scroll .part{
     text-align: center;
@@ -839,7 +839,6 @@ header #insta-btns img{
   }
 
   /*Scroll*/
-  
 #story-container{
     margin-top: 10%;
 }
@@ -953,6 +952,13 @@ footer{
     align-items: center;
 }
 }
+
+@media only screen and (min-width:740px){
+    .scroll{
+        width: 380px;
+    }
+}
+
 @media only screen and (min-width:800px){
      /*Menu Messages*/
     #messages-menu{
@@ -964,7 +970,7 @@ footer{
     margin-top: 9%;
 }
 .scroll{
-    width: 350px;
+    width: 430px;
 }
 }
 @media only screen and (min-width:1300px){
