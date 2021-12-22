@@ -125,13 +125,17 @@ function hidewrapper(){
 let commentMenu = document.getElementById('comment-menu');
 commentMenu.style.width = '0px';
 
+
+
 function toggleComments(){
+
     if(commentMenu.style.width == '0px'){
      commentMenu.style.width = "100%";
     }
     else{
     commentMenu.style.width = '0px';
     }
+  
 }
 
 //------comment like reaction
@@ -243,10 +247,11 @@ publishBtn.onclick = ()=>{
   else{
     listArr = JSON.parse(getLocalStorage);
   }
-  inputField.value = '';
+  inputField.value = null;
   listArr.push(userData);
   localStorage.setItem("New Comment", JSON.stringify(listArr));
   showTasks();
+  publishBtn.classList.remove('active');
 }
 
 function	showTasks(){

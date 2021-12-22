@@ -1036,6 +1036,7 @@ header #insta-btns{
     height: 42px
 }
 footer{
+    z-index: 10000;
     display: flex;
     justify-content: center;
 }
@@ -1073,8 +1074,11 @@ footer{
 
 /*Comments*/
 #comment-menu{
+    z-index: 10;
     min-width: 600px;
     min-height: 600px;
+    max-width: 600px;
+    max-height: 600px;
     margin-top: -89px;
     overflow: auto;
     text-align: left;
@@ -1091,6 +1095,7 @@ footer{
 }
 #comment-menu #comment-type{
     position: relative;
+    z-index: 10;
 }
 }
 @media only screen and (max-width:1300px){
