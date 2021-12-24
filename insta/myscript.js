@@ -367,3 +367,25 @@ function Slider(){
   const btnPrev = document.querySelector('.prev');
   const btnNext = document.querySelector('.next');
 }
+
+//toggle options
+let options = document.getElementById("options-toggle");
+options.style.maxHeight = '0px';
+
+let background2 = document.getElementById("darker-background2");
+
+function toggleOptions(){
+   if(options.style.maxHeight == '0px'){
+    options.style.paddingTop = '10px';
+    options.style.paddingBottom = '10px';
+    options.style.maxHeight = '330px';
+ 
+    background2.classList.add('show-dark');
+   }
+   else{
+    options.style.padding = '0';
+    options.style.maxHeight = '0px';
+     
+    background2.classList.remove('show-dark');
+   }
+}
