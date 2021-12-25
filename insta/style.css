@@ -759,7 +759,6 @@ textarea{
 
 /*Options Post*/
 #options-toggle{
-    text-align: center;
     width: 100%;
     background: rgb(46, 46, 46);
     display: fixed;
@@ -767,7 +766,6 @@ textarea{
     bottom: 0;
     transition:0.5s  ease-in-out;
     left:0;
-    text-align: center;
     color: white;
     z-index: 1000;
 }
@@ -779,8 +777,7 @@ textarea{
 #options-close{
     float: center;
     margin-right: 30px;
-    width: 10px;
-    height: 10px;
+    height: 7px;
     cursor: pointer;
 }
 #option-buttons img{
@@ -788,7 +785,15 @@ textarea{
     padding: 15px;
     margin: auto;
 }
+#options-toggle h4{
+ font-weight: 600;
+ padding-left: 15px;
+}
+#close-wrapper{
+    text-align: center;
+}
 .option-button{
+    text-align: left;
     display: flex;
     flex-direction: column;
     align-items: center;
