@@ -776,7 +776,6 @@ textarea{
 }
 #options-close{
     float: center;
-    margin-right: 30px;
     height: 7px;
     cursor: pointer;
 }
@@ -788,11 +787,13 @@ textarea{
 #options-toggle h4{
  font-weight: 600;
  padding-left: 15px;
+ cursor: pointer;
 }
 #close-wrapper{
     text-align: center;
 }
 .option-button{
+    width: 100px;
     text-align: left;
     display: flex;
     flex-direction: column;
