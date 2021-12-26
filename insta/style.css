@@ -801,6 +801,12 @@ textarea{
     justify-content: center;
     gap: 5px;
 }
+.option-red .option-wrapper{
+    border-color: rgb(255, 0, 85);
+}
+.option-red{
+    color: rgb(255, 56, 56);
+}
 .option-wrapper{
     cursor: pointer;
     max-width: 55px;
