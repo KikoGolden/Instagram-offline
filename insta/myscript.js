@@ -389,3 +389,18 @@ function toggleOptions(){
     background2.classList.remove('show-dark');
    }
 }
+//copy button
+let copyBtn = document.getElementById("copy-btn");
+var pageLink = 'https://drippymanegldn.000webhostapp.com/';
+copyBtn.onclick = function(){
+  navigator.clipboard.writeText(pageLink);
+}
+
+let savedLinkObject = document.getElementById("saved-link-wrapper")
+
+function saveLink(){
+  savedLinkObject.classList.remove('dont-show');
+  setTimeout(function(){
+    savedLinkObject.classList.add('dont-show');
+ },1300);
+}

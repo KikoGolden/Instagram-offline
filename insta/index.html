@@ -409,6 +409,11 @@
 
     </div>
 
+     <!--Link Saved-->
+<div id="saved-link-wrapper" class="dont-show">
+   <div id="saved-link">Връзката е копирана</div>
+</div>
+
 <!--Darker theme-->
 <div  id="darker-background2"></div>
 
@@ -418,8 +423,8 @@
          <img onclick="toggleOptions()" id="options-close" src="images/x.png">
         </div>
          <div id="option-buttons">
-           <div class="option-button">
-             <div class="option-wrapper">
+           <div id="copy-btn" class="option-button">
+             <div class="option-wrapper" onclick="toggleOptions(), saveLink()">
              <img src="images/copy-link.png">
             </div>
              <strong>Връзка</strong>
@@ -446,6 +451,9 @@
          <h4>Скриване</h4>
          <h4>Отказ от следването</h4>
      </div>
+
+     
+
 
   </div><!--Page END-->
      

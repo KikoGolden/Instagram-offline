@@ -818,6 +818,30 @@ textarea{
     z-index: 900;
 }
 
+/*Saved Link*/
+#saved-link-wrapper{
+    text-align: center;
+    vertical-align: center;
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    left: 30%;
+    right: 30%;
+}
+#saved-link{
+    padding: 15px;
+    text-align: center;
+     background: rgb(46, 46, 46);
+     color: white;
+     width: 170px;
+     border-radius: 5px;
+     z-index: 10000;
+}
+
+.dont-show{
+    display: none;
+}
+
 /*----------------------------------Search Page-------------------------------------*/
 /*header search*/
 #search-type{
@@ -856,7 +880,11 @@ textarea{
 
 
 /*-----------Different Screens--------------*/
-
+@media only screen and (max-width:700px){
+    .scroll{
+        width: 300px;
+    }
+}
 @media only screen and (min-width:700px){
     /*Posted Image*/
   .post{
