@@ -399,8 +399,12 @@ copyBtn.onclick = function(){
 let savedLinkObject = document.getElementById("saved-link-wrapper")
 
 function saveLink(){
+  savedLinkObject.classList.remove('fade-out');
   savedLinkObject.classList.remove('dont-show');
   setTimeout(function(){
-    savedLinkObject.classList.add('dont-show');
+    savedLinkObject.classList.add('fade-out');
  },1300);
+  setTimeout(function(){
+    savedLinkObject.classList.add('dont-show');
+ },1500);
 }
