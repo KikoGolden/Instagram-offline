@@ -408,3 +408,25 @@ function saveLink(){
     savedLinkObject.classList.add('dont-show');
  },1500);
 }
+
+//report button 
+let reportMenu= document.getElementById("reportMenu");
+reportMenu.style.maxHeight = '0px';
+
+let background3 = document.getElementById("darker-background3");
+
+function reportMenuToggle(){
+  if(reportMenu.style.maxHeight == '0px'){
+    reportMenu.style.paddingTop = '10px';
+    reportMenu.style.paddingBottom = '10px';
+    reportMenu.style.maxHeight = '95%';
+ 
+    background3.classList.add('show-dark');
+   }
+   else{
+    reportMenu.style.padding = '0';
+    reportMenu.style.maxHeight = '0px';
+     
+    background3.classList.remove('show-dark');
+   }
+}

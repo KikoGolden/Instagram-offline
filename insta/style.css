@@ -394,6 +394,8 @@ footer #profile{
 
 /*Save Collections*/
 #save-collections{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
   width: 100%;
   background: rgb(46, 46, 46);
   display: fixed;
@@ -759,6 +761,8 @@ textarea{
 
 /*Options Post*/
 #options-toggle{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     width: 100%;
     background: rgb(46, 46, 46);
     display: fixed;
@@ -801,6 +805,11 @@ textarea{
     justify-content: center;
     gap: 5px;
 }
+.option-button:hover{
+    transform: scale(0.9);
+    transition:0.2s ease-in-out;
+}
+
 .option-red .option-wrapper{
     border-color: rgb(255, 0, 85);
 }
@@ -858,6 +867,21 @@ textarea{
 @keyframes fadeIn{
     from { opacity: 0;}
     to {opacity: 1;}
+}
+
+/*Report Menu*/
+#reportMenu{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background: rgb(46, 46, 46);
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1100;
+    transition:0.5s  ease-in-out;
+}
+#reportMenu h3{
+    text-align: center;
 }
 
 /*----------------------------------Search Page-------------------------------------*/

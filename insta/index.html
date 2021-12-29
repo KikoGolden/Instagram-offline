@@ -441,7 +441,7 @@
           </div>
 
           <div class="option-button option-red">
-            <div class="option-wrapper">
+            <div class="option-wrapper" onclick="toggleOptions(), reportMenuToggle()">
             <img src="images/report.png">
            </div>
             <strong>Докладване</strong>
@@ -454,7 +454,21 @@
          <h4>Отказ от следването</h4>
      </div>
 
-     
+
+     <!--Darker theme-->
+<div  id="darker-background3"></div>
+
+<!--Report Menu-->
+ <div id="reportMenu">
+  <div id="close-wrapper">
+    <img onclick="reportMenuToggle()" id="options-close" src="images/x.png">
+   </div>
+ <h3>Докладване</h3>
+ <hr size="0.1em" color="gray" />
+
+
+ </div>  
+
 
 
   </div><!--Page END-->
