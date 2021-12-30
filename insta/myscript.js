@@ -419,7 +419,7 @@ function reportMenuToggle(){
   if(reportMenu.style.maxHeight == '0px'){
     reportMenu.style.paddingTop = '10px';
     reportMenu.style.paddingBottom = '10px';
-    reportMenu.style.maxHeight = '95%';
+    reportMenu.style.maxHeight = '90%';
  
     background3.classList.add('show-dark');
    }

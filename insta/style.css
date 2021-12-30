@@ -703,6 +703,31 @@ textarea{
     margin-right: 15px;
 }
 
+/*Messages search*/
+#search-msg-wrapper{
+    display: flex;
+    justify-content: center;
+}
+#search-type-msg{
+    display: flex;
+    background-color:rgb(46, 46, 46);
+    border-radius: 20px;
+    align-items: center;
+    margin: 15px 20px;
+    width: 85%;
+    padding: 1px 10px;
+    gap: 4%;
+}
+#search-type-msg img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+#search-type-msg textarea{
+    background:none;
+    margin-top: 4%;
+}
+
 /*Messages Nav*/
 #messages-navigation{
     display: flex;
@@ -878,23 +903,53 @@ textarea{
     position: fixed;
     bottom: 0;
     z-index: 1100;
+    overflow: scroll;
     transition:0.5s  ease-in-out;
 }
-#reportMenu h3{
+#reportMenu::-webkit-scrollbar{
+    height: 0;
+    width: 0;
+}
+#reportMenu h4{
+    margin: 0;
+    padding: 13px 15px;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+#report-menu-main-h3{
     text-align: center;
+}
+#reportMenu h5{
+    margin: auto 15px;
+    color: rgb(179, 178, 178);
+}
+#top-h3{
+   font-size: 16px;
+   text-align: left;
+   padding-left: 15px;
+}
+#reportMenu h4:hover{
+    cursor: pointer;
+    background-color:rgb(90, 90, 90);
+}
+#reportMenu #topped{
+    margin-top: 10px;
 }
 
 /*----------------------------------Search Page-------------------------------------*/
 /*header search*/
+#search-wrapper{
+    display: flex;
+    justify-content: center;
+}
 #search-type{
     display: flex;
     background-color:rgb(46, 46, 46);
-    border-radius: 5%;
+    border-radius: 20px;
     align-items: center;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin: 15px 20px;
     width: 85%;
-    padding: 7px 10px;
+    padding: 1px 10px;
     gap: 4%;
 }
 #search-type img{
