@@ -348,27 +348,31 @@ function currElementMessage3(){
 }
 
 //---toggle messages 
-let messagesMenu = document.getElementById('messages-menu')
+let messagesMenu = document.getElementById('messages-menu');
+let msgSearch = document.getElementById('search-msg-wrapper');
 messagesMenu.style.width = '0px';
+msgSearch.style.visibility = 'hidden';
 
 function toggleMessages(){
   if(messagesMenu.style.width == '0px'){
     messagesMenu.style.width = '100%';
     messagesMenu.style.height = '100%';
+    msgSearch.style.visibility = 'visible';
    }
    else{
     messagesMenu.style.width = '0px';
+    msgSearch.style.visibility = 'hidden';
    }
 }
 
-//story slider
+//-----story slider
 function Slider(){
   const carouselSlides = document.querySelectorAll(".part");
   const btnPrev = document.querySelector('.prev');
   const btnNext = document.querySelector('.next');
 }
 
-//toggle options
+//-----toggle options
 let options = document.getElementById("options-toggle");
 options.style.maxHeight = '0px';
 
@@ -389,7 +393,7 @@ function toggleOptions(){
     background2.classList.remove('show-dark');
    }
 }
-//copy button
+//------copy button
 let copyBtn = document.getElementById("copy-btn");
 var pageLink = 'https://drippymanegldn.000webhostapp.com/';
 copyBtn.onclick = function(){
@@ -409,7 +413,7 @@ function saveLink(){
  },1500);
 }
 
-//report button 
+//---------report button 
 let reportMenu= document.getElementById("reportMenu");
 reportMenu.style.maxHeight = '0px';
 
@@ -429,4 +433,16 @@ function reportMenuToggle(){
      
     background3.classList.remove('show-dark');
    }
+}
+
+//Delete Reported Post
+let postReported = document.getElementById("main-post-content");
+
+function reportedPostDel(){
+  if(postReported.classList.contains('dont-show')){
+  postReported.classList.remove('dont-show')
+  }
+  else{
+    postReported.classList.add('dont-show')
+  }
 }

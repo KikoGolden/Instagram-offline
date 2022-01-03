@@ -707,6 +707,7 @@ textarea{
 #search-msg-wrapper{
     display: flex;
     justify-content: center;
+    transition: 0.3s ease-in-out;
 }
 #search-type-msg{
     display: flex;
@@ -903,10 +904,9 @@ textarea{
     position: fixed;
     bottom: 0;
     z-index: 1100;
-    overflow: scroll;
     transition:0.5s  ease-in-out;
 }
-#reportMenu::-webkit-scrollbar{
+#report-options-wrapper::-webkit-scrollbar{
     height: 0;
     width: 0;
 }
@@ -934,6 +934,9 @@ textarea{
 }
 #reportMenu #topped{
     margin-top: 10px;
+}
+#report-options-wrapper{
+    overflow: scroll;
 }
 
 /*----------------------------------Search Page-------------------------------------*/
@@ -997,6 +1000,12 @@ textarea{
   /*Menu Messages*/
   #messages-menu{
       max-width: 60%;
+  }
+
+  /*Report Menu*/
+  #reportMenu{
+      width: 60%;
+      text-align: left;
   }
 
   /*Header*/
@@ -1162,6 +1171,12 @@ footer{
   #input{
       width: 230px;
   }
+
+  /*Report Menu*/
+  #reportMenu{
+    width: 50%;
+}
+
   /*Scroll*/
 #story-container{
     margin-top: 9%;
@@ -1183,6 +1198,12 @@ header #insta-btns{
     #messages-menu{
         max-width:35%;
     }
+
+     /*Report Menu*/
+  #reportMenu{
+    width: 35%;
+    left: 0;
+}
 
   /*Scroll*/
 #story-container{
@@ -1267,6 +1288,11 @@ footer{
     overflow: auto;
     text-align: left;
     position: relative;
+    z-index: 100;
+}
+
+#darker-background3{
+    z-index: 1000;
 }
 
 #comments-nav{
@@ -1296,6 +1322,11 @@ footer{
     #messages-menu{
         max-width: 30%;
     }
+
+     /*Report Menu*/
+  #reportMenu{
+    width: 30%;
+}
 
         /*Scroll*/
 #story-container{

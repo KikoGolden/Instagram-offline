@@ -125,6 +125,9 @@
   <hr size="0.1em" color="gray" />
   <!-- posts -->
 
+  <!--Main Post Content-->
+  <div id="main-post-content">
+
 <!--prf-post-wrapper -->
 <div id="prf-post-wrapper">
 
@@ -376,7 +379,6 @@
      
   </div>
     </div><!--Wrapper post main END-->
-
      
     <!--Messages-->
     <div id="messages-menu">
@@ -474,21 +476,25 @@
  <hr size="0.1em" color="gray" />
  <h3 id="top-h3">Защо Докладвате тази публикация?</h3>
    <h5>Докладът ви е анонимен, освен ако не докладвате нарушаване на права върху интелектуална собственост. Ако някой е в непосредствена опасност, обадете се на услугите за спешна помощ - не чакайте</h5>
- <h4 id="topped">Това е спам</h4>
- <h4>Просто не ми харесва</h4>
- <h4>Голота или сексуална дейност</h4>
- <h4>Омразна реч или символи</h4>
- <h4>Насилие или опасни организации</h4>
- <h4>Фалшива информация</h4>
- <h4>Измама</h4>
- <h4>Малтретиране или тормоз</h4>
- <h4>Нарушаване на интелектуална собственост</h4>
- <h4>Самоубийство или самонараняване</h4>
- <h4>Продажба на незаконни или регулирани стоки</h4>
- <h4>Хранителни разтройства</h4>
+ 
+   <div id="report-options-wrapper">
+   <h4 id="topped" onclick="reportMenuToggle(), reportedPostDel()">Това е спам</h4>
+ <h4 onclick="reportMenuToggle(), reportedPostDel()">Просто не ми харесва</h4>
+ <h4 onclick="reportMenuToggle(), reportedPostDel()">Голота или сексуална дейност</h4>
+ <h4 onclick="reportMenuToggle(), reportedPostDel()">Омразна реч или символи</h4>
+ <h4 onclick="reportMenuToggle(), reportedPostDel()">Насилие или опасни организации</h4>
+ <h4 onclick="reportMenuToggle(), reportedPostDel()">Фалшива информация</h4>
+ <h4 onclick="reportMenuToggle(), reportedPostDel()">Измама</h4>
+ <h4 onclick="reportMenuToggle(), reportedPostDel()">Малтретиране или тормоз</h4>
+ <h4 onclick="reportMenuToggle(), reportedPostDel()">Нарушаване на интелектуална собственост</h4>
+ <h4 onclick="reportMenuToggle(), reportedPostDel()">Самоубийство или самонараняване</h4>
+ <h4 onclick="reportMenuToggle(), reportedPostDel()">Продажба на незаконни или регулирани стоки</h4>
+ <h4 onclick="reportMenuToggle(), reportedPostDel()">Хранителни разтройства</h4>
+</div>
+
  </div>  
 
-
+</div><!--Main Post Content END-->
 
   </div><!--Page END-->
      
