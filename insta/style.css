@@ -939,6 +939,40 @@ textarea{
     overflow: scroll;
 }
 
+/*Reported post message window*/
+#reported-post-window{
+    background: rgb(46, 46, 46);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#reported-post-window h5{
+color: white;
+}
+#reported-post-window img{
+    margin-top:30px;
+    width: 43px;
+    height: 43px;
+}
+.remove{
+    display: none;
+}
+#reported-post-window .darker-text-h4{
+    color: rgb(179, 178, 178);
+}
+#close-report-message{
+    margin-top: 35px;
+ color: rgb(0, 140, 255);
+ cursor: pointer;
+}
+#reported-contents-wrapper{
+    width: 75%;
+}
+#reported-contents-wrapper h4{
+    font-weight: 500;
+}
+
 /*----------------------------------Search Page-------------------------------------*/
 /*header search*/
 #search-wrapper{
