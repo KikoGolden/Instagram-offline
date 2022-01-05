@@ -456,11 +456,9 @@
             <strong>Докладване</strong>
           </div>
          </div>
-         <hr size="0.1em" color="gray" />
-         <h4>Защо виждате тази публикация</h4>
-         <hr size="0.1em" color="gray" />
-         <h4>Скриване</h4>
-         <h4>Отказ от следването</h4>
+         <h4 class="top-option-element" onclick="toggleOptions()">Защо виждате тази публикация</h4>
+         <h4 onclick="toggleOptions(), hidedPostMenuToggle()">Скриване</h4>
+         <h4 class="bottom-option-element" onclick="toggleOptions()">Отказ от следването</h4>
      </div>
 
 
@@ -497,20 +495,37 @@
 </div><!--Main Post Content END-->
 </div>
 </div>
-<!--Reported Post Window-->
 
+<!--Reported Post Window-->
 <div  id="reported-post-window">
 
   <div class="remove" id="reported-contents-wrapper">
 
   <img src="images/tick.png">
   <h4>Благодарим ви, че докладвахте тази публикация</h4>
-  <h4 class="darker-text-h4">Мнението ви е важно, за да можем да поддържаме общността на Instagram като жезопасно място.</h4>
+  <h4 class="darker-text-h4">Мнението ви е важно, за да можем да поддържаме общността на Instagram като безопасно място.</h4>
   <h4 onclick="reportedPostDel()" id="close-report-message">Показване на публикацията</h4>
 
 </div>
 
 </div><!--Reported Post Window END-->
+
+<!--Hide Post Window-->
+<div  id="hide-post-window">
+
+  <div class="remove" id="hide-contents-wrapper">
+
+  <img src="images/tick.png">
+  <h4 class="darker-text-h4">Тази публикация е скрита. Ще виждате публикации като тези по-назад в информационния си канал.</h4>
+
+  <h4 class="profile-posted-options">Докладване на тази публикация</h4>
+  <h4 class="profile-posted-options">Заглушаване на Marvel</h4>
+  <h4 class="profile-posted-options">Отказ от следването на Marvel</h4>
+  <h4 onclick="hidedPostMenuToggle()" id="close-hide-message">Отмяна</h4>
+
+</div>
+
+</div><!--Hide Post Window END-->
 
   </div><!--Page END-->
      

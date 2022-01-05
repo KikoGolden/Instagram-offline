@@ -419,20 +419,41 @@ function reportMenuToggle() {
   }
 }
 
-//Delete Reported Post
-let postReported = document.getElementById("main-post-content");
-let postReportedMsg = document.getElementById("reported-contents-wrapper");
-
-function reportedPostDel() {
+//---Delete Post Function
+function deletePost() {
+  let postReported = document.getElementById("main-post-content");
   if (postReported.classList.contains("dont-show")) {
     postReported.classList.remove("dont-show");
   } else {
     postReported.classList.add("dont-show");
   }
+}
+
+//---Delete Reported Post
+let postReportedMsg = document.getElementById("reported-contents-wrapper");
+
+function reportedPostDel() {
+
+ deletePost();
 
   if (postReportedMsg.classList.contains("remove")) {
     postReportedMsg.classList.remove("remove");
   } else {
     postReportedMsg.classList.add("remove");
   }
+}
+
+//----Hide Post 
+let postHidedMsg = document.getElementById("hide-contents-wrapper");
+
+function hidedPostMenuToggle(){
+
+deletePost();
+
+if (postHidedMsg.classList.contains("remove")) {
+  postHidedMsg.classList.remove("remove");
+} else {
+  postHidedMsg.classList.add("remove");
+}
+
 }

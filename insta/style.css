@@ -815,9 +815,21 @@ textarea{
     margin: auto;
 }
 #options-toggle h4{
- font-weight: 600;
+ font-weight: 560;
+ margin: 0;
+ padding: 15px 10px;
  padding-left: 15px;
  cursor: pointer;
+}
+#options-toggle h4:hover{
+    background: rgb(31, 31, 31);
+}
+.top-option-element{
+    border-top: 0.1rem solid grey;
+    border-bottom: 0.1rem solid grey;
+}
+.bottom-option-element{
+    margin-bottom: 25px;
 }
 #close-wrapper{
     text-align: center;
@@ -903,7 +915,7 @@ textarea{
     width: 100%;
     position: fixed;
     bottom: 0;
-    z-index: 1100;
+    z-index: 3100;
     transition:0.5s  ease-in-out;
 }
 #report-options-wrapper::-webkit-scrollbar{
@@ -971,6 +983,58 @@ color: white;
 }
 #reported-contents-wrapper h4{
     font-weight: 500;
+}
+
+/*Hide Post Window*/
+#hide-post-window{
+    background: rgb(46, 46, 46);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+#hide-post-window img{
+    margin-top:30px;
+    width: 43px;
+    height: 43px;
+}
+#hide-post-window .darker-text-h4{
+    margin-left: 13%;
+    margin-right: 13%;
+    color: rgb(179, 178, 178);
+}
+#close-hide-message{
+    margin-top: 15px;
+ color: rgb(0, 140, 255);
+ cursor: pointer;
+}
+#hide-contents-wrapper{
+    text-align: center;
+    width: 100%;
+}
+#hide-contents-wrapper h4{
+    font-weight: 500;
+}
+.profile-posted-options{
+    margin: 0;
+    width: 100%;
+    z-index: 300;
+    margin: 1px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    cursor: pointer;
+    background: rgb(31, 31, 31);
+}
+.profile-posted-options:hover{
+    background: rgb(46, 46, 46);
+}
+.content-center{
+    width: 75%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 /*----------------------------------Search Page-------------------------------------*/
@@ -1223,6 +1287,7 @@ footer{
 /*Header*/
 header{
     width: 1200px;
+    z-index: 3000;
 }
 header #insta-btns{
   padding-left: 72%;
