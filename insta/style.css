@@ -1308,6 +1308,40 @@ header #insta-btns{
 #story-container{
     margin-top: 7%;
 }
+.scroll{
+    padding-right: 180px;
+    overflow: hidden;
+    position: relative;
+    z-index: 100;
+}
+#scroll-container{
+    width: 600px;
+    overflow: hidden;
+    z-index: 100;
+    margin-right: -415px;
+}
+.prevButton{
+    left:0px;
+}
+.nextButton{
+    right: 120px;
+}
+#nextBtn{
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+    height: 40px;
+    margin-top: 50px;
+}
+#prevBtn{
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1000;
+    height: 40px;
+    margin-right: -430px;
+    margin-top: 50px;
+}
 
 /*Post flexed*/
 #unflexed-img{
@@ -1413,6 +1447,13 @@ footer{
  display:none;
 }
 #comment-menu2{
+    display:none;
+}
+/*slide buttons*/
+#nextBtn{
+    display:none;
+}
+#prevBtn{
     display:none;
 }
 }

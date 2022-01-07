@@ -457,3 +457,26 @@ if (postHidedMsg.classList.contains("remove")) {
 }
 
 }
+
+//-----Swiper
+let prevBtn = document.getElementById("prevBtn");
+let nextBtn = document.getElementById("nextBtn");
+let slider = document.getElementById("slider");
+
+prevBtn.onclick = function(){
+    if (slider.classList.contains('nextButton')) {
+      slider.classList.remove('nextButton');
+    }
+    else{
+      slider.classList.add('prevButton');
+    }
+}
+nextBtn.onclick = function(){
+    if (slider.classList.contains('prevButton')) {
+      slider.classList.remove('prevButton');
+      slider.classList.add('nextButton');
+    }
+    else{
+      slider.classList.add('nextButton');
+    }
+}
