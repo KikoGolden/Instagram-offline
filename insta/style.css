@@ -1317,6 +1317,8 @@ footer{
 header{
     width: 1200px;
     z-index: 3000;
+    padding-right: 100%;
+    padding-left: 100%;
 }
 header #insta-btns{
   padding-left: 72%;
