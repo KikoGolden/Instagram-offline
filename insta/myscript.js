@@ -392,7 +392,7 @@ function saveLink() {
   savedLinkObject.classList.remove("dont-show");
   setTimeout(function () {
     savedLinkObject.classList.add("fade-out");
-  }, 1300);
+  }, 1400);
   setTimeout(function () {
     savedLinkObject.classList.add("dont-show");
   }, 1500);
@@ -479,4 +479,19 @@ nextBtn.onclick = function(){
     else{
       slider.classList.add('nextButton');
     }
+}
+
+//---unfollowed menu 
+let unfollowedMsg = document.getElementById("unfollowed-wrapper");
+
+function unfollow() {
+  deletePost();
+  unfollowedMsg.classList.remove("fade-out");
+  unfollowedMsg.classList.remove("dont-show");
+  setTimeout(function () {
+    unfollowedMsg.classList.add("fade-out");
+  }, 1400);
+  setTimeout(function () {
+    unfollowedMsg.classList.add("dont-show");
+  }, 1500);
 }
