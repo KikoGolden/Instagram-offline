@@ -1,2 +1,2 @@
 # Instagram-offline
-Instagram Copy - v0.28 Responsive!
+Instagram Copy - v0.29 Responsive!
