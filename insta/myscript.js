@@ -495,3 +495,24 @@ function unfollow() {
     unfollowedMsg.classList.add("dont-show");
   }, 1500);
 }
+
+//-----toggle why menu
+let whyMenu = document.getElementById("why-toggle");
+whyMenu.style.maxHeight = "0px";
+
+let background4 = document.getElementById("darker-background4");
+
+function whyMenuToggle() {
+  if (whyMenu.style.maxHeight == "0px") {
+    whyMenu.style.paddingTop = "10px";
+    whyMenu.style.paddingBottom = "10px";
+    whyMenu.style.maxHeight = "330px";
+
+    background4.classList.add("show-dark");
+  } else {
+    whyMenu.style.padding = "0";
+    whyMenu.style.maxHeight = "0px";
+
+    background4.classList.remove("show-dark");
+  }
+}

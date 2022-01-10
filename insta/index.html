@@ -458,7 +458,7 @@
             <strong>Докладване</strong>
           </div>
          </div>
-         <h4 class="top-option-element" onclick="toggleOptions()">Защо виждате тази публикация</h4>
+         <h4 class="top-option-element" onclick="toggleOptions(),whyMenuToggle()">Защо виждате тази публикация</h4>
          <h4 onclick="toggleOptions(), hidedPostMenuToggle()">Скриване</h4>
          <h4 class="bottom-option-element" onclick="toggleOptions(),unfollow()">Отказ от следването</h4>
      </div>
@@ -536,6 +536,41 @@
   </div>
 </div>
 <!--Unfollowed Window END-->
+
+<!--Darker theme-->
+<div  id="darker-background4"></div>
+
+<!--(Why showing this publication) menu-->
+     <div id="why-toggle">
+       <div id="close-why">
+         <img onclick="whyMenuToggle()" id="why-close" src="images/x.png">
+        </div>
+
+         <div class="top-option-el">
+           <h4 >Защо виждате тази публикация</h4>
+          </div>
+
+          <h5>Публикациите се показват в информационния канал на базата на много неща, включително дейността ви в инстаграм. <strong>Научете повече</strong></h5>
+
+        <div id="reasons-container">
+
+         <div class="show-reason">
+         <img src="images/marvelpfp.jpg">
+           <h4>Следвате Marvel</h4>
+        </div>
+
+        <div class="show-reason">
+          <img class="bordered" src="images/CalendarIcon.png">
+            <h4>Наскоро последвахте Marvel</h4>
+         </div>
+
+         <div class="show-reason">
+          <img class="bordered" src="images/clockIcon.png">
+          <h4 class="bottom-option-element">Тази публикация е по-нова от други, които сте видели</h4>
+         </div>
+
+        </div>
+     </div>
 
   </div><!--Page END-->
      

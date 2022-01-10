@@ -1066,6 +1066,70 @@ color: white;
     animation: fadeOut 0.2s linear;
 }
 
+/*Why is this publication showing*/
+#why-toggle{
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    width: 100%;
+    background: rgb(46, 46, 46);
+    display: fixed;
+    position: fixed;
+    bottom: 0;
+    transition:0.5s  ease-in-out;
+    left:0;
+    color: white;
+    z-index: 3000;
+}
+#why-close{
+    float: center;
+    height: 7px;
+    cursor: pointer;
+}
+#reasons-container img{
+    border-radius: 100%;
+    height: 36px;
+    padding: 15px;
+}
+.show-reason{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+#why-toggle h4{
+ font-weight: 560;
+ margin: 0;
+ padding: 15px 10px;
+ padding-left: 1px;
+ cursor: pointer;
+}
+#why-toggle h5 strong{
+    font-weight: 900;
+}
+.top-option-el{
+    border-bottom: 0.1rem solid grey;
+}
+.bottom-option-element{
+    margin-bottom: 25px;
+}
+#close-why{
+    text-align: center;
+}
+#darker-background4{
+    z-index: 900;
+}
+#why-toggle h5{
+    margin: 12px 28px;
+    color: rgb(179, 178, 178);
+}
+#why-toggle .bordered{
+    border: 0.1rem solid grey;
+    padding: 0;
+    margin: 15px;
+}
+
+
+
 /*----------------------------------Search Page-------------------------------------*/
 /*header search*/
 #search-wrapper{
@@ -1304,6 +1368,11 @@ footer{
     width: 50%;
 }
 
+/*Why Menu*/
+#why-toggle{
+    width: 50%;
+}
+
   /*Scroll*/
 #story-container{
     margin-top: 9%;
@@ -1335,6 +1404,12 @@ header #insta-btns{
     left: 0;
 }
 
+/*Why Menu*/
+#why-toggle{
+    width: 35%;
+    left: 0;
+}
+
   /*Scroll*/
 #story-container{
     margin-top: 7%;
@@ -1360,7 +1435,7 @@ header #insta-btns{
 #nextBtn{
     cursor: pointer;
     position: relative;
-    z-index: 1000;
+    z-index: 800;
     height: 40px;
     margin-top: 50px;
 }
@@ -1368,7 +1443,7 @@ header #insta-btns{
     height: 40px;
     cursor: pointer;
     position: relative;
-    z-index: 1000;
+    z-index: 800;
     height: 40px;
     margin-right: -430px;
     margin-top: 50px;
@@ -1496,6 +1571,10 @@ footer{
 
      /*Report Menu*/
   #reportMenu{
+    width: 30%;
+}
+/*Why Menu*/
+#why-toggle{
     width: 30%;
 }
 
