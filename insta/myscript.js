@@ -380,7 +380,7 @@ function toggleOptions() {
 }
 //------copy button
 let copyBtn = document.getElementById("copy-btn");
-var pageLink = "https://drippymanegldn.000webhostapp.com/";
+var pageLink = "https://kikogolden-instagram-offline.netlify.app/";
 copyBtn.onclick = function () {
   navigator.clipboard.writeText(pageLink);
 };
