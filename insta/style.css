@@ -610,7 +610,6 @@ footer #profile{
 #comment-type{
     display: flex;
     background-color: rgb(46, 46, 46);
-    width: 100%;
     gap: 3%;
     padding: 4% 2%;
 }
